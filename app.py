@@ -26,17 +26,14 @@ if __name__ == "__main__":
 # from fastapi.responses import FileResponse
 # import uuid
 # from pydantic import BaseModel
-# import pickle
 # import json
 # import uvicorn
-# from pyngrok import ngrok
 # from fastapi.middleware.cors import CORSMiddleware
 # import nest_asyncio
 # # from drive.MyDrive.AniGAN.test import main
 
 # from PIL import Image
 # import torch
-# import gradio as gr
 
 # model0 = torch.hub.load("AK391/animegan2-pytorch:main", "generator", pretrained="face_paint_512_v2",  device="cuda")
 # model1 = torch.hub.load("AK391/animegan2-pytorch:main", "generator", pretrained="face_paint_512_v1",  device = "cuda")
@@ -248,8 +245,6 @@ if __name__ == "__main__":
 # class DownloadRequest(BaseModel):
 #   url: str = ""
 
-# import requests
-
 # @app.post('/transform')
 # async def AniGAN(req: AniGANRequest):
 
@@ -314,12 +309,9 @@ if __name__ == "__main__":
 #     path_to_file = f"./{req.url}"
 #     return FileResponse(path_to_file, media_type='application/octet-stream', filename=req.url)
 
-# !ngrok config add-authtoken 2c2VDtn1u5S9QxpZ8FUuj99K2eD_45e8smX5koHVg2Eo2aHYp
 
 # # Commented out IPython magic to ensure Python compatibility.
 # # %cd \content
 
-# ngrok_tunnel = ngrok.connect(8000)
-# print('Public URL:', ngrok_tunnel.public_url)
 # nest_asyncio.apply()
 # uvicorn.run(app, port=8000)
